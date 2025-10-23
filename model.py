@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 from torch.nn import Module, Linear, ReLU, Sequential, Flatten
 
@@ -22,6 +23,7 @@ class Model(Module):
         return self.net(x)
 
 if __name__ == '__main__': pass
+
 
 
 
