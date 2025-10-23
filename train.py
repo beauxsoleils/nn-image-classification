@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 """
 Handles all the training logic. Defined manually.
@@ -102,6 +103,7 @@ def run_training_loop(
     return train_loss
 
 if __name__ == "__main__": pass
+
 
 
 
