@@ -1,0 +1,10 @@
+[project]
+name = "nn-image-classification"
+version = "0.0.1"
+description = "Trains a neural network on MNIST features. Returns /checkpoint/_.pth to local directory"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "pytorch",
+  "tqdm"
+]

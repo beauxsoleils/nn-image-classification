@@ -1,0 +1,9 @@
+
+# folders
+checkpoints
+data
+app
+__pycache__
+
+# scrach
+eval.py
