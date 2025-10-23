@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 import os, torch
 
@@ -24,5 +25,6 @@ def save_model_state(
         model.state_dict(), 
         path
     )
+
 
     return path
