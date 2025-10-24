@@ -61,11 +61,11 @@ def evaluate(
     total_loss = 0.0
 
     with torch.no_grad():
-        for xb, yb in dataloader:
-            xb, yb = xb.to(device), yb.to(device)
-            preds = model(xb)
-            loss = loss_fn(preds, yb)
-            total_loss += loss.item() * xb.size(0)
+        for feature, target in dataloader:
+            feature, target = feature.to(device), target.to(device)
+            preds = model(feature)
+            loss = loss_fn(preds, target)
+            total_loss += loss.item() * feature.size(0)
 
     return total_loss / len(dataloader.dataset)
     
@@ -103,6 +103,7 @@ def run_training_loop(
     return train_loss
 
 if __name__ == "__main__": pass
+
 
 
 
